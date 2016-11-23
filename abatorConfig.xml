@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN" "http://ibatis.apache.org/dtd/abator-config_1_0.dtd" >
+<abatorConfiguration >
+  <abatorContext >
+    
+     <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/lujingzhong?characterEncoding=utf-8" 
+    userId="root" password="root" >
+      <classPathEntry location="C:\Users\lujingzhong\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar" />
+    </jdbcConnection>
+    <javaModelGenerator targetPackage="com.lzj.bean" targetProject="abatorCreater/src" />
+    <sqlMapGenerator targetPackage="com.lzj.sqlMap" targetProject="abatorCreater/src" />
+    <daoGenerator targetPackage="com.lzj.dao" targetProject="abatorCreater/src" type="GENERIC-CI" />
+    <table schema="???" tableName="stars_white_list" >
+    </table>
+  </abatorContext>
+</abatorConfiguration>
